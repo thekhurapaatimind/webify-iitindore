@@ -1,4 +1,4 @@
-.navbar {
+/* .design-nav {
     position: fixed;
     top: 0px;
     height: 70px;
@@ -8,4 +8,13 @@
     border-radius: 0px 0px 100% 100%;
     backdrop-filter: blur(4px);
     z-index: 10;
+} */
+
+.navlinks {
+    text-decoration: none;
+    color: #fff;
+    width: 500px;
+}
+.active {
+    font-weight: 600;
 }

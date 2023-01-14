@@ -12,11 +12,11 @@ function NavbarComponent() {
                     <Nav.Link as={NavLink} to="/anime">Anime</Nav.Link>
                     <Nav.Link as={NavLink} to="/action">Action</Nav.Link>
                 </Nav>
-                <Navbar.Brand as={Link} to="/">MOVIEPEDIA</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/">MOVIEMANIA</Navbar.Brand>
                 <Nav className="m-auto">
                     <Nav.Link as={NavLink} to="/horror">Horror</Nav.Link>
                     <Nav.Link as={NavLink} to="/mystery">Mystery</Nav.Link>
-                    <Nav.Link as={NavLink} to="/romantic">Romantic</Nav.Link>
+                    <Nav.Link as={NavLink} to="/romantic">Romantic-Comedy</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

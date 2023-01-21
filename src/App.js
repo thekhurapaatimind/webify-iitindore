@@ -1,17 +1,17 @@
 import './App.css';
 import LandingPage from './components/LandingPage/LandingPage';
-import NavbarComponent from './components/NavbarComponent/NavbarComponent';
 import { Routes, Route } from 'react-router-dom'
 import Animated from './components/Genres/Animated';
 import Action from './components/Genres/Action';
 import Horror from './components/Genres/Horror';
 import Mystery from './components/Genres/Mystery';
 import Romantic from './components/Genres/Romantic';
+import Navbar from './components/NavbarComponent/Navbar';
 
 function App() {
   return (
     <div>
-      <NavbarComponent/>
+      <Navbar/>
       <Routes>
         <Route exact path='/' element={<LandingPage/>} />
         <Route exact path='/anime' element={<Animated/>} />

@@ -9,7 +9,7 @@ function Navbar() {
   const factor = 8;
   const clipPath = `polygon(0 0, 100% 0, ${100 - factor}% 100%, ${factor}% 100%)`
   const [bgColor, setBgColor] = useState('transparent');
-  var height = window.innerHeight;
+  const height = 100;
   //turning navbar to solid color
   window.addEventListener('scroll', () => {
     if (window.scrollY > height) {
@@ -18,59 +18,63 @@ function Navbar() {
       setBgColor('transparent')
     }
   })
+  // mobile navbar
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
 
   return (
-    <div
-      className='d-flex justify-content-center align-items-center'
-      style={{
-        position: 'fixed',
-        zIndex: '100',
-        width: '100%',
-      }}
-    >
+    <>
       <div
-        className='container d-flex justify-content-center align-items-center gap-5 px-5 py-2'
+        className='d-flex justify-content-center align-items-center'
         style={{
-          backgroundColor: bgColor,
-          clipPath: clipPath
+          position: 'fixed',
+          zIndex: '100',
+          width: '100%',
         }}
       >
-        {/* container left */}
         <div
-          className='d-flex gap-3'
+          className='container d-flex justify-content-center align-items-center gap-5 px-5 py-2'
+          style={{
+            backgroundColor: bgColor,
+            clipPath: clipPath
+          }}
         >
-          <Link
-            to='/'
-            className='text-decoration-none text-light'
+          {/* container left */}
+          <div
+            className='horizontal gap-3'
           >
-            Home
-          </Link>
-          <Link
-            to='/'
-            className='text-decoration-none text-light'
-          >
-            Home
-          </Link>
-          <Link
-            to='/'
-            className='text-decoration-none text-light'
-          >
-            Home
-          </Link>
-        </div>
-        {/* logo */}
-        <div>
-          <Link
-            to='/'
-            className='text-decoration-none text-inherit'
-            style={{
-              fontSize: bgColor === 'transparent' ? '2rem' : '1.5rem',
-              color: "rgb(0, 187, 255)",
-              fontWeight: '600',
-              // textShadow: 'rgb(255, 255, 255, 0.5)'
-            }}
-          >
-            {/* <img
+            <Link
+              to='/'
+              className='text-decoration-none text-light'
+            >
+              Home
+            </Link>
+            <Link
+              to='/'
+              className='text-decoration-none text-light'
+            >
+              Home
+            </Link>
+            <Link
+              to='/'
+              className='text-decoration-none text-light'
+            >
+              Home
+            </Link>
+          </div>
+          {/* logo */}
+          <div>
+            <Link
+              to='/'
+              className='text-decoration-none text-inherit'
+              style={{
+                fontSize: click ? '2rem' : '1.5rem',
+                color: "rgb(0, 187, 255)",
+                fontWeight: '600',
+                // textShadow: 'rgb(255, 255, 255, 0.5)'
+              }}
+            >
+              {/* <img
              src={logo}
               alt="logo"
               style={{
@@ -78,34 +82,50 @@ function Navbar() {
               }}
 
                 /> */}
-                MOVIEMANIA
-          </Link>
-        </div>
-        {/* container right */}
-        <div
-          className='d-flex gap-3'
-        >
-        <Link
-            to='/'
-            className='text-decoration-none text-light'
+              MOVIEMANIA
+            </Link>
+          </div>
+          {/* container right */}
+          <div
+            className='horizontal gap-3'
           >
-            Home
-          </Link>
-          <Link
-            to='/'
-            className='text-decoration-none text-light'
-          >
-            Home
-          </Link>
-          <Link
-            to='/'
-            className='text-decoration-none text-light'
-          >
-            Home
-          </Link>
+            <Link
+              to='/'
+              className='text-decoration-none text-light'
+            >
+              Home
+            </Link>
+            <Link
+              to='/'
+              className='text-decoration-none text-light'
+            >
+              Home
+            </Link>
+            <Link
+              to='/'
+              className='text-decoration-none text-light'
+            >
+              Home
+            </Link>
+          </div>
+          {/* mobile navbar */}
+          <div className="nav-icon" onClick={handleClick}>
+            <i style={{ color: "rgb(0, 187, 255)" }} className={click ? "fa fa-times" : "fa fa-bars"}></i>
+          </div>
         </div>
       </div>
-    </div>
+      <div className={click ? "mobile-nav active" : "mobile-nav"}>
+        <Link to="/" className="text-decoration-none" onClick={handleClick}>
+          Home
+        </Link>
+        <Link to="/" className="text-decoration-none" onClick={handleClick}>
+          Home
+        </Link>
+        <Link to="/" className="text-decoration-none" onClick={handleClick}>
+          Home
+        </Link>
+        </div>
+    </>
   )
 }
 

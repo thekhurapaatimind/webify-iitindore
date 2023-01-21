@@ -1,15 +1,16 @@
 import React from 'react'
 import './LandingPage.css'
 import hero from '../../assets/hero.webp'
+import Hero from '../Hero/Hero'
 
 function LandingPage() {
   return (
-    <div className="hero">
-      <img src={hero} alt="hero" className='hero-bg'/>
-      <div className="hero-text">
-        <h1>MOVIE<span className="hero-name">MANIA</span></h1>
+    <>
+      <Hero/>
+      <div>
+        <img src={hero} alt="hero" className='hero-bg'/>
       </div>
-    </div>
+    </>
   )
 }
 

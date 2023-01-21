@@ -9,18 +9,24 @@ function Navbar() {
   const factor = 8;
   const clipPath = `polygon(0 0, 100% 0, ${100 - factor}% 100%, ${factor}% 100%)`
   const [bgColor, setBgColor] = useState('transparent');
+  const [logoColor, setLogoColor] = useState('rgb(0, 187, 255)');
   const height = 100;
   //turning navbar to solid color
   window.addEventListener('scroll', () => {
     if (window.scrollY > height) {
-      setBgColor('rgb(0, 0, 0, 0.8)')
+      setBgColor('rgb(0, 187, 255)')
+      setLogoColor('white');
     } else {
       setBgColor('transparent')
+      setLogoColor('rgb(0, 187, 255)');
     }
   })
   // mobile navbar
   const [click, setClick] = useState(false)
-  const handleClick = () => setClick(!click)
+  const handleClick = () => {
+    // console.log(click);
+    setClick(!click)
+  }
 
   return (
     <>
@@ -36,43 +42,39 @@ function Navbar() {
           className='container d-flex justify-content-center align-items-center gap-5 px-5 py-2'
           style={{
             backgroundColor: bgColor,
-            clipPath: clipPath
+            clipPath: clipPath,
+            transition: 'all 0.5s ease',
           }}
         >
           {/* container left */}
           <div
-            className='horizontal gap-3'
+            className={`horizontal gap-3`}
           >
             <Link
               to='/'
-              className='text-decoration-none text-light'
+              className='text-decoration-none'
             >
               Home
             </Link>
             <Link
               to='/'
-              className='text-decoration-none text-light'
+              className='text-decoration-none'
             >
-              Home
+              Animation
             </Link>
             <Link
               to='/'
-              className='text-decoration-none text-light'
+              className='text-decoration-none'
             >
-              Home
+              Action
             </Link>
           </div>
           {/* logo */}
           <div>
             <Link
               to='/'
-              className='text-decoration-none text-inherit'
-              style={{
-                fontSize: click ? '2rem' : '1.5rem',
-                color: "rgb(0, 187, 255)",
-                fontWeight: '600',
-                // textShadow: 'rgb(255, 255, 255, 0.5)'
-              }}
+              className='text-decoration-none text-inherit navbar-logo'
+              style={{color: logoColor}}
             >
               {/* <img
              src={logo}
@@ -87,30 +89,30 @@ function Navbar() {
           </div>
           {/* container right */}
           <div
-            className='horizontal gap-3'
+            className={`horizontal gap-3 ${click ? "active" : ""}`}
           >
             <Link
               to='/'
-              className='text-decoration-none text-light'
+              className='text-decoration-none'
             >
-              Home
+              Horror
             </Link>
             <Link
               to='/'
-              className='text-decoration-none text-light'
+              className='text-decoration-none'
             >
-              Home
+              Mystery
             </Link>
             <Link
               to='/'
-              className='text-decoration-none text-light'
+              className='text-decoration-none'
             >
-              Home
+              Rom-Com
             </Link>
           </div>
           {/* mobile navbar */}
           <div className="nav-icon" onClick={handleClick}>
-            <i style={{ color: "rgb(0, 187, 255)" }} className={click ? "fa fa-times" : "fa fa-bars"}></i>
+            <i style={{ color: logoColor }} className={click ? "fa fa-times" : "fa fa-bars"}></i>
           </div>
         </div>
       </div>

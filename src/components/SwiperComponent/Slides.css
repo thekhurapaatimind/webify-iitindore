@@ -1,0 +1,25 @@
+.overlay {
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    padding: 20px;
+    transition: all 0.2s ease-in;
+    color: transparent;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
+}
+.cardelement:hover .overlay {
+    z-index: 2;
+    display: block;
+    color: white;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 60%, rgb(0, 187, 255) 100%);
+}
+
+.readmore {
+    display: none;
+}
+.cardelement:hover .readmore {
+    display: unset;
+    
+}

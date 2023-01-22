@@ -78,7 +78,7 @@ function SwiperComponent() {
                 <div className="trapezium"
                     style={{
                         clipPath: clipPath,
-                        background: "#fff",
+                        background: "#000",
                         height: "52px",
                         padding: "10px 30px",
                         color: "white",

@@ -6,8 +6,8 @@ import logo from '../../assets/navbar-brand2.png'
 
 function Navbar() {
   // polygon clip path
-  const factor = 8;
-  const clipPath = `polygon(0 0, 100% 0, ${100 - factor}% 100%, ${factor}% 100%)`
+  const clipFactor = 8;
+  const clipPath = `polygon(0 0, 100% 0, ${100 - clipFactor}% 100%, ${clipFactor}% 100%)`
   const [bgColor, setBgColor] = useState('transparent');
   const [logoColor, setLogoColor] = useState('rgb(0, 187, 255)');
   const height = 100;

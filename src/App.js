@@ -7,6 +7,7 @@ import Horror from './components/Genres/Horror';
 import Mystery from './components/Genres/Mystery';
 import Romantic from './components/Genres/Romantic';
 import Navbar from './components/NavbarComponent/Navbar';
+import GenrePage from './pages/GenrePage/GenrePage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact path='/' element={<LandingPage/>} />
+        <Route exact path='/genre' element={<GenrePage/>} />
         <Route exact path='/anime' element={<Animated/>} />
         <Route exact path='/action' element={<Action/>} />
         <Route exact path='/horror' element={<Horror/>} />

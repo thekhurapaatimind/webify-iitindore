@@ -1,59 +1,49 @@
 {
-    "animated" : [
+    "animation" : [
         {
-            "name":"Spider-Man: Into the Spider-Verse (2018)",
-            "trailer": "",
-            "image": "",
-            "duration": "",
-            "description": "It is the first animated film in the Spider-Man franchise. The film's story follows Miles Morales as he becomes the new Spider-Man and joins other Spider-People from various parallel universes to save his universe from Kingpin.",
-            "rating": "",
-            "releasedate": "",
-            "watch": "",
-            "cast": ""
+            "id": "a1",
+            "name": "Spiderman: Into the Spider-Verse",
+            "year": "2018",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "trailerLink": "https://www.youtube.com/embed/g4Hbz2jLxvQ",
+            "imageLink": "/assets/images/movies/animation/1.jpg"
         },
         {
-            "name":"Your Name (2016)",
-            "trailer": "",
-            "image": "",
-            "duration": "",
-            "description": "",
-            "rating": "",
-            "releasedate": "",
-            "watch": "",
-            "cast": ""
+            "id": "a2",
+            "name": "Your Name",
+            "year": "2016",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "trailerLink": "https://www.youtube.com/embed/xU47nhruN-Q",
+            "imageLink": "/assets/images/movies/animation/2.jpg"
         },
         {
-            "name":"Grave of the Fireflies (1988)",
-            "trailer": "",
-            "image": "",
-            "duration": "",
-            "description": "",
-            "rating": "",
-            "releasedate": "",
-            "watch": "",
-            "cast": ""
+            "id": "a3",
+            "name": "Grave of the Fireflies",
+            "year": "1988",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "trailerLink": "https://www.youtube.com/embed/4vPeTSRd580",
+            "imageLink": "/assets/images/movies/animation/3.jpg"
         },
         {
-            "name":"The Lion King (1994)",
-            "trailer": "",
-            "image": "",
-            "duration": "",
-            "description": "",
-            "rating": "",
-            "releasedate": "",
-            "watch": "",
-            "cast": ""
+            "id": "a4",
+            "name": "The Lion King",
+            "year": "1994",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "trailerLink": "https://www.youtube.com/embed/lFzVJEksoDY",
+            "imageLink": "/assets/images/movies/animation/4.jpg"
         },
         {
-            "name":"Spirited Away (2001)",
-            "trailer": "",
-            "image": "",
-            "duration": "",
-            "description": "",
-            "rating": "",
-            "releasedate": "",
-            "watch": "",
-            "cast": ""
+            "id": "a5",
+            "name": "Spirited Away",
+            "year": "2001",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "fullDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "trailerLink": "https://www.youtube.com/embed/ByXuk9QqQkk",
+            "imageLink": "/assets/images/movies/animation/5.jpg"
         }
     ],
 
@@ -173,7 +163,7 @@
         }
     ],
 
-    "romantic-comedy" : [
+    "romcom" : [
         {
             "name":"Chhichhore",
             "trailer": "",

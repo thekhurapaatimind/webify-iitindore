@@ -56,13 +56,13 @@ function Navbar() {
               Home
             </Link>
             <Link
-              to='/'
+              to='/genre/animation'
               className='text-decoration-none'
             >
               Animation
             </Link>
             <Link
-              to='/'
+                   to='/genre/action'
               className='text-decoration-none'
             >
               Action
@@ -91,19 +91,19 @@ function Navbar() {
             className={`horizontal gap-3 ${click ? "active" : ""}`}
           >
             <Link
-              to='/'
+              to='/genre/horror'
               className='text-decoration-none'
             >
               Horror
             </Link>
             <Link
-              to='/'
+               to='/genre/mystery'
               className='text-decoration-none'
             >
               Mystery
             </Link>
             <Link
-              to='/'
+                  to='/genre/romcom'
               className='text-decoration-none'
             >
               Rom-Com

@@ -3,6 +3,7 @@ import { Card, Row, Col } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import './MoviePage.css'
 import data from '../../data/data.json';
+import Slides from '../../components/SwiperComponent/Slides';
 
 function MoviePage() {
     const params = useParams();
@@ -23,6 +24,16 @@ function MoviePage() {
         setMovie(requiredMovie);
         setMovieGenre(requiredMovieCategory);
     }, [movieId])
+
+    // get all movies of the same genre except the current movie
+    const [relatedMovies, setRelatedMovies] = useState([]);
+    useEffect(() => {
+        if (movieGenre && movieId) {
+            const movies = data[movieGenre].filter((movie) => movie.id !== movieId);
+            setRelatedMovies(movies);
+        }
+    }, [movieGenre, movieId])
+
 
     const getBackground = (genre) => {
         switch (genre) {
@@ -77,6 +88,14 @@ function MoviePage() {
                             {movie && <p>{movie.fullDescription}</p>}
                         </Col>
                     </Row>
+                    <Card.Subtitle className='text-center display-6'>Similar Movies</Card.Subtitle>
+                    <div className='d-flex justify-content-center flex-wrap'>
+                        {relatedMovies.map((movie) => {
+                            return (
+                                <Slides key={movie.id} {...movie} />
+                            )
+                        })}
+                    </div>
                 </Card.Body>
             </Card>
         </div>

@@ -45,7 +45,7 @@ const Slides = (props) => {
                 <Card.Subtitle as="h6" style={{ marginTop: "115px", textTransform: "uppercase" }}>
                   {genre}
                 </Card.Subtitle>
-                <Card.Title as="h1">{name.length>20?name.substring(0,20)+"...":name}</Card.Title>
+                <Card.Title as="h1">{name && name.length>20?name.substring(0,20)+"...":name}</Card.Title>
               </Card.Body>
             </Card.ImgOverlay>
           </Card>

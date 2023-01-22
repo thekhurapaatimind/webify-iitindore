@@ -4,7 +4,7 @@ import './GenrePage.css'
 
 function GenrePage() {
     return (
-        <div className='mb-5'>
+        <div>
             <div className="hero-section">
                 <div className="hero-text">
                     <h1>Animation</h1>

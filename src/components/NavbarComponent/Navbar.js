@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { useState } from 'react'
-import logo from '../../assets/navbar-brand2.png'
 
 function Navbar() {
   // polygon clip path

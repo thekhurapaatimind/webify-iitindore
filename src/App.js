@@ -1,5 +1,5 @@
 import './App.css';
-import LandingPage from './components/LandingPage/LandingPage';
+import LandingPage from './pages/LandingPage/LandingPage';
 import { Routes, Route } from 'react-router-dom'
 import Animated from './components/Genres/Animated';
 import Action from './components/Genres/Action';

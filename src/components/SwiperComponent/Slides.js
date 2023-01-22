@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card, Button, Badge, Container } from "react-bootstrap";
+import { Card, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import  "./Slides.css";
 import data from "../../data/data.json";

@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Slides from "./Slides";
-import img from "../../assets/image.jpg";
 import { useEffect, useState } from "react";
 // Import Swiper styles
 import "swiper/css";

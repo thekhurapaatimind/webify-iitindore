@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Card, Row, Col, Button } from 'react-bootstrap'
+import { Card, Row, Col } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import './MoviePage.css'
 import data from '../../data/data.json';
@@ -22,7 +22,7 @@ function MoviePage() {
         })
         setMovie(requiredMovie);
         setMovieGenre(requiredMovieCategory);
-    }, [])
+    }, [movieId])
 
     const getBackground = (genre) => {
         switch (genre) {
@@ -57,6 +57,7 @@ function MoviePage() {
                 {/* Trailer Youtube video iframe */}
                 {movie &&
                     <iframe
+                        title='trailer'
                         className="youtube"
                         width="100%"
                         src={movie.trailerLink}

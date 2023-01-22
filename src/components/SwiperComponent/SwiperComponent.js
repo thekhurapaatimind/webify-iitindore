@@ -1,19 +1,33 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Slides from "./Slides";
 import img from "../../assets/image.jpg";
+import { useEffect, useState } from "react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
+import data from "../../data/data.json";
 
 // import required modules
 import { Autoplay, Navigation, Pagination, EffectCoverflow } from "swiper";
 
 function SwiperComponent() {
+    const clipFactor = 8;
+    const clipPath = `polygon(0% 100%, 100% 100%, ${100 - clipFactor}% 0%, ${clipFactor}% 0%)`
 
-    const factor = 8;
-    const clipPath = `polygon(0% 100%, 100% 100%, ${100 - factor}% 0%, ${factor}% 0%)`
+    // get all movies from the json
+    const [movies, setMovies] = useState([]);
+    useEffect(() => {
+        const requiredMovies = [];
+        Object.keys(data).forEach((genre) => {
+            data[genre].forEach((movie) => {
+                requiredMovies.push(movie);
+            })
+        })
+        setMovies(requiredMovies);
+    }, []);
+
     return (
         <>
             <div id="pastyearbooks" className="pb-5" style={{
@@ -57,18 +71,13 @@ function SwiperComponent() {
                     className="mySwiper"
                 >
                     {/* {JsonData.map((d) => ( */}
-                    <SwiperSlide className="d-flex justify-content-center align-items-center">
-                        <Slides img={img} name={"SPIDER-MAN"} genre={"Action"} />
-                    </SwiperSlide>
-                    <SwiperSlide className="d-flex justify-content-center align-items-center">
-                        <Slides img={img} name={"SPIDER-MAN"} genre={"Action"} />
-                    </SwiperSlide>
-                    <SwiperSlide className="d-flex justify-content-center align-items-center">
-                        <Slides img={img} name={"SPIDER-MAN"} genre={"Action"} />
-                    </SwiperSlide>
-                    <SwiperSlide className="d-flex justify-content-center align-items-center">
-                        <Slides img={img} name={"SPIDER-MAN"} genre={"Action"} />
-                    </SwiperSlide>
+                    {movies.map((movie) => {
+                        return (
+                            <SwiperSlide className="d-flex justify-content-center align-items-center">
+                                <Slides {...movie} />
+                            </SwiperSlide>
+                        )
+                    })}
                     {/* ))} */}
                 </Swiper>
             </div>

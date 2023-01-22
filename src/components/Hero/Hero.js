@@ -3,8 +3,8 @@ import './Hero.css'
 import hero from '../../assets/hero.webp'
 
 function Hero() {
-  const factor = 8;
-  const clipPath = `polygon(0 0, 100% 0, ${100 - factor}% 100%, ${factor}% 100%)`
+  const clipFactor = 8;
+  const clipPath = `polygon(0 0, 100% 0, ${100 - clipFactor}% 100%, ${clipFactor}% 100%)`
   return (
     <>
       <div className="hero">

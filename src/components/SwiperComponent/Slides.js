@@ -1,8 +1,24 @@
+import { useEffect, useState } from "react";
 import { Card, Button, Badge, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import  "./Slides.css";
+import data from "../../data/data.json";
 
 const Slides = (props) => {
-  const {name, genre, badge, img} = props;
+  const {id, name, imageLink, shortDescription} = props;
+  const [genre, setGenre] = useState("");
+  useEffect(() => {
+    let requiredGenre = null;
+    Object.keys(data).forEach((genre) => {
+      data[genre].forEach((movie) => {
+        if (movie.id === id) {
+          requiredGenre = genre;
+        }
+      });
+    });
+    setGenre(requiredGenre);
+  }, [id]);
+
   return (
     <>
       <div className="slides-section">
@@ -13,10 +29,10 @@ const Slides = (props) => {
             style={{ width: "15rem", background: "#f1f1f1", border: "none", borderRadius:"15px" }}
           >
             <div className="overlay">
-                  <Button variant="outline-light" className="mb-3 readmore">Read More</Button>
-                  <p style={{fontSize:"12px"}}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate sunt qui ut, sed eligendi non voluptatem tenetur consequatur facere tempore, aut, id nisi placeat ipsa vero nostrum natus quidem et quam officiis asperiores. Facere facilis accusantium, quam libero laboriosam earum distinctio officiis ipsum, sed commodi architecto nam incidunt culpa.</p>
+                  <Button variant="outline-light" className="readmore" as={Link} to={`/movie/${id}`}>Read More</Button>
+                  <p className="mt-3" style={{fontSize:"12px"}}>{shortDescription}</p>
                 </div>
-            <Card.Img variant="top" src={img} style={{borderRadius:"inherit"}}></Card.Img>
+            <Card.Img variant="top" src={imageLink} style={{borderRadius:"inherit"}}></Card.Img>
             <Card.ImgOverlay>
             
               <Card.Body className="p-0" style={{
@@ -25,18 +41,8 @@ const Slides = (props) => {
                 justifyContent: "flex-end",
                 height: "100%",
               }}>
-                
-                <div className="text-start">
-                  <h5>
-                    {badge ? (
-                      <Badge bg="warning">{badge}</Badge>
-                    ) : (
-                      <br />
-                    )}
-                  </h5>
-                </div>
                 {/* <div className="align-items-end"> */}
-                <Card.Subtitle as="h6" style={{ marginTop: "115px" }}>
+                <Card.Subtitle as="h6" style={{ marginTop: "115px", textTransform: "uppercase" }}>
                   {genre}
                 </Card.Subtitle>
                 <Card.Title as="h1">{name.length>20?name.substring(0,20)+"...":name}</Card.Title>

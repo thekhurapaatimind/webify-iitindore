@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import './Genre.css'
 
 function Genre() {
@@ -19,7 +20,7 @@ function Genre() {
                             G<b />E<b />N<b />R<b />E<b />S
                         </div>
                     </Col>
-                    <Col className='h-100 p-2' style={{}} sm={12} lg={3}>
+                    <Col className='h-100 p-2' style={{}} sm={12} lg={3} as={Link} to={'/genre/animation'}>
                         <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
                             <div className='overlay-gradient og1'>
                                 <div className='text-class' style={{ writingMode: "vertical-lr", transform: "rotate(180deg)", fontSize: "3rem" }}>
@@ -29,7 +30,7 @@ function Genre() {
                             <img alt="thumb" className='thumbnails' src="./assets/images/Animation.jpg" />
                         </div>
                     </Col>
-                    <Col className='h-100' style={{}} sm={12} lg={7}>
+                    <Col className='h-100' style={{}} sm={12} lg={7} as={Link} to={'/genre/mystery'}>
                         <Row className='h-50' style={{}}>
                             <Col className='h-100 p-2' style={{}} sm={12} lg={8}>
                                 <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
@@ -39,7 +40,7 @@ function Genre() {
                                     <img alt="thumb" className='thumbnails' src="./assets/images/Mystery.jpg" />
                                 </div>
                             </Col>
-                            <Col className='h-100 p-2' style={{}} sm={12} lg={4}>
+                            <Col className='h-100 p-2' style={{}} sm={12} lg={4} as={Link} to={'/genre/romcom'}>
                                 <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
                                     <div className='overlay-gradient og3'>
                                         <div className='text-class' style={{ writingMode: "vertical-lr", fontSize: "2rem" }}>ROM-COM</div>
@@ -49,7 +50,7 @@ function Genre() {
                             </Col>
                         </Row>
                         <Row className='h-50' style={{}}>
-                            <Col className='h-100 p-2' style={{}} lg={6}>
+                            <Col className='h-100 p-2' style={{}} lg={6} as={Link} to={'/genre/horror'}> 
                                 <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
                                     <div className='overlay-gradient og4'>
                                         <div className='text-class'>HORROR</div>
@@ -57,7 +58,7 @@ function Genre() {
                                     <img alt="thumb" className='thumbnails' src="./assets/images/Horror.jpg" />
                                 </div>
                             </Col>
-                            <Col className='h-100 p-2' style={{}} lg={6}>
+                            <Col className='h-100 p-2' style={{}} lg={6} as={Link} to={'/genre/action'}>
                                 <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
                                     <div className='overlay-gradient og5'>
                                         <div className='text-class'>ACTION</div>
@@ -73,7 +74,7 @@ function Genre() {
                 <Row className='p-2 w-100 text-center genres'>
                     <h1>GENRES</h1>
                 </Row>
-                <Container className='w-100 mobile-items'>
+                <Container className='w-100 mobile-items' as={Link} to={'/genre/action'}>
                     <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
                         <div className='overlay-gradient og1'>
                             <div className='text-class'>ACTION</div>
@@ -81,7 +82,7 @@ function Genre() {
                         <img alt="thumb" className='thumbnails' src="./assets/images/Action.jpg" />
                     </div>
                 </Container>
-                <Container className='w-100 mobile-items'>
+                <Container className='w-100 mobile-items' as={Link} to={'/genre/animation'}>
                     <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
                         <div className='overlay-gradient og2'>
                             <div className='text-class'>ANIMATION</div>
@@ -89,7 +90,7 @@ function Genre() {
                         <img alt="thumb" className='thumbnails' src="./assets/images/Animation.jpg" />
                     </div>
                 </Container>
-                <Container className='w-100 mobile-items'>
+                <Container className='w-100 mobile-items' as={Link} to={'/genre/horror'}>
                     <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
                         <div className='overlay-gradient og3'>
                             <div className='text-class'>HORROR</div>
@@ -97,7 +98,7 @@ function Genre() {
                         <img alt="thumb" className='thumbnails' src="./assets/images/Horror.jpg" />
                     </div>
                 </Container>
-                <Container className='w-100 mobile-items'>
+                <Container className='w-100 mobile-items' as={Link} to={'/genre/mystery'}>
                     <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
                         <div className='overlay-gradient og4'>
                             <div className='text-class'>MYSTERY</div>
@@ -105,7 +106,7 @@ function Genre() {
                         <img alt="thumb" className='thumbnails' src="./assets/images/Mystery.jpg" />
                     </div>
                 </Container>
-                <Container className='w-100 mobile-items'>
+                <Container className='w-100 mobile-items' as={Link} to={'/genre/romcom'}>
                     <div className='h-100 w-100 bg-dark' style={{ position: "relative" }}>
                         <div className='overlay-gradient og5'>
                             <div className='text-class'>ROM-COM</div>

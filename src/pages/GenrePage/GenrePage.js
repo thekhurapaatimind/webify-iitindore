@@ -95,7 +95,7 @@ function GenrePage() {
                             )
                         } else {
                             return (
-                                <Row className='movie-row movie-right' key={movie.id}>
+                                <Row className='movie-row g-movie-right' key={movie.id}>
                                     <Col className='movie-thumb'>
                                         <img src={movie.imageLink} alt="thumb" />
                                     </Col>

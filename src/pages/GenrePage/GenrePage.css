@@ -155,4 +155,8 @@
     .h4 {
         margin: 0;
     }
+    .movie-right {
+        display: flex;
+        flex-direction: column;
+    }
 }

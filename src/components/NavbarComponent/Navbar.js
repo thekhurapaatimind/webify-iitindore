@@ -8,7 +8,7 @@ function Navbar() {
   const clipFactor = 8;
   const clipPath = `polygon(0 0, 100% 0, ${100 - clipFactor}% 100%, ${clipFactor}% 100%)`
   const [bgColor, setBgColor] = useState('transparent');
-  const [logoColor, setLogoColor] = useState('rgb(0, 187, 255)');
+  const [logoColor, setLogoColor] = useState('white');
   const height = 100;
   //turning navbar to solid color
   window.addEventListener('scroll', () => {
@@ -17,7 +17,7 @@ function Navbar() {
       setLogoColor('white');
     } else {
       setBgColor('transparent')
-      setLogoColor('rgb(0, 187, 255)');
+      setLogoColor('white');
     }
   })
   // mobile navbar
@@ -62,7 +62,7 @@ function Navbar() {
               Animation
             </Link>
             <Link
-                   to='/genre/action'
+              to='/genre/action'
               className='text-decoration-none'
             >
               Action
@@ -73,7 +73,7 @@ function Navbar() {
             <Link
               to='/'
               className='text-decoration-none text-inherit navbar-logo'
-              style={{color: logoColor}}
+              style={{ color: logoColor }}
             >
               {/* <img
              src={logo}
@@ -97,13 +97,13 @@ function Navbar() {
               Horror
             </Link>
             <Link
-               to='/genre/mystery'
+              to='/genre/mystery'
               className='text-decoration-none'
             >
               Mystery
             </Link>
             <Link
-                  to='/genre/romcom'
+              to='/genre/romcom'
               className='text-decoration-none'
             >
               Rom-Com
@@ -116,16 +116,49 @@ function Navbar() {
         </div>
       </div>
       <div className={click ? "mobile-nav active" : "mobile-nav"}>
-        <Link to="/" className="text-decoration-none" onClick={handleClick}>
+        <Link
+          to='/'
+          className='text-decoration-none'
+          onClick={handleClick}
+        >
           Home
         </Link>
-        <Link to="/" className="text-decoration-none" onClick={handleClick}>
-          Home
+        <Link
+          to='/genre/animation'
+          className='text-decoration-none'
+          onClick={handleClick}
+        >
+          Animation
         </Link>
-        <Link to="/" className="text-decoration-none" onClick={handleClick}>
-          Home
+        <Link
+          to='/genre/action'
+          className='text-decoration-none'
+          onClick={handleClick}
+        >
+          Action
         </Link>
-        </div>
+        <Link
+          to='/genre/horror'
+          className='text-decoration-none'
+          onClick={handleClick}
+        >
+          Horror
+        </Link>
+        <Link
+          to='/genre/mystery'
+          className='text-decoration-none'
+          onClick={handleClick}
+        >
+          Mystery
+        </Link>
+        <Link
+          to='/genre/romcom'
+          className='text-decoration-none'
+          onClick={handleClick}
+        >
+          Rom-Com
+        </Link>
+      </div>
     </>
   )
 }

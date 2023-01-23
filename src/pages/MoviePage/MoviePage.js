@@ -38,17 +38,17 @@ function MoviePage() {
     const getBackground = (genre) => {
         switch (genre) {
             case 'animation':
-                return '/assets/images/Animation.jpg';
+                return '/assets/images/genres/Animation.jpg';
             case 'action':
-                return '/assets/images/Action.jpg';
+                return '/assets/images/genres/Action.jpg';
             case 'horror':
-                return '/assets/images/Horror.jpg';
+                return '/assets/images/genres/Horror.jpg';
             case 'mystery':
-                return '/assets/images/Mystery.jpg';
+                return '/assets/images/genres/Mystery.jpg';
             case 'romcom':
-                return '/assets/images/RomCom.jpg';
+                return '/assets/images/genres/RomCom.jpg';
             default:
-                return '/assets/images/Animation.jpg';
+                return '/assets/images/genres/Animation.jpg';
         }
     }
 

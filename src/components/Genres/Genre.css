@@ -54,6 +54,11 @@
     align-items: center;
 }
 
+.inner-container {
+    height: 100%;
+    width: 84%;
+    margin: 0 8%;
+}
 @media (max-width: 1150px) {
     .screen-view {
         display: none;

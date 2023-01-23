@@ -22,17 +22,17 @@ const Slides = (props) => {
   return (
     <>
       <div className="slides-section">
-        <Container className="m-4 p-3">
+        <Container className="p-3 mb-5">
           <Card
             className="text-end shadow cardelement"
             text="white"
             style={{ width: "15rem", background: "#f1f1f1", border: "none", borderRadius:"15px" }}
           >
             <div className="overlay">
+                  <p className="mb-5" style={{fontSize:"12px"}}>{shortDescription}</p>
                   <Button variant="outline-light" className="readmore" as={Link} to={`/movie/${id}`}>Read More</Button>
-                  <p className="mt-3" style={{fontSize:"12px"}}>{shortDescription}</p>
                 </div>
-            <Card.Img variant="top" src={imageLink} style={{borderRadius:"inherit"}}></Card.Img>
+            <Card.Img variant="top" src={imageLink} style={{borderRadius:"inherit", height:"100%"}}></Card.Img>
             <Card.ImgOverlay>
             
               <Card.Body className="p-0" style={{

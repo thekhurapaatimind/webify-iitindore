@@ -4,10 +4,13 @@
     width: 100%;
     position: absolute;
     z-index: 0;
-    padding: 20px;
+    padding: 60px 30px;
     transition: all 0.2s ease-in;
     color: transparent;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
+}
+.cardelement {
+    aspect-ratio: 1/1.5;
 }
 .cardelement:hover .overlay {
     z-index: 2;

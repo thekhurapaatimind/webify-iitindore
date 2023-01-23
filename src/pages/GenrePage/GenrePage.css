@@ -25,12 +25,14 @@
     left: 0;
     z-index: -1;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 92% 100%, 8% 100%, 0 90%);
+    background-color: #000;
 }
 .hero-image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    opacity: 0.5;
 }
 .page-content {
     width: 84%;

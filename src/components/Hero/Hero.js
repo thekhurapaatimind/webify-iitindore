@@ -25,7 +25,7 @@ function Hero() {
           display: "flex",
         }}
       >
-        <i class="fa-solid fa-angles-up"></i>
+        <i className="fa-solid fa-angles-up"></i>
       </div>
     </>
   )

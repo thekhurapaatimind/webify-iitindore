@@ -1,0 +1,131 @@
+.svg-item {
+    font-size: 16px;
+    width: 300px;
+    /* height: 300px; */
+    animation: donutfade 1s;
+    padding: 20px;
+    max-width: 300px;
+}
+
+@keyframes donutfade {
+  /* this applies to the whole svg item wrapper */
+    0% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .svg-item {
+        width: 80%;
+    }
+}
+
+.donut-ring {
+    stroke: #1e212b;
+}
+
+.donut-segment {
+    transform-origin: center;
+    stroke: #FF6200;
+}
+
+.donut-segment-2 {
+    stroke: #53C480;
+}
+
+.donut-segment-3 {
+    stroke: rgb(226, 182, 22);
+}
+
+.donut-segment-4 {
+    stroke: rgb(250, 50, 6);
+}
+
+.segment-1{fill:#ccc;}
+.segment-2{fill:#53C480;}
+.segment-3{fill:rgb(226, 182, 22);}
+.segment-4{fill:rgb(250, 50, 6);}
+
+.donut-percent {
+    animation: donutfadelong 1s;
+}
+
+@keyframes donutfadelong {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes donut2 {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 30, 70;
+    }
+}
+
+@keyframes donut3{
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 1, 99;
+    }
+}
+
+.donut-text {
+    font-family: Arial, Helvetica, sans-serif;
+    fill: #FF6200;
+}
+.donut-text-1 {
+    fill: #53C480;
+}
+.donut-text-2 {
+    fill: rgb(226, 182, 22);;
+}
+.donut-text-3 {
+    fill: rgb(250, 50, 6);
+}
+
+.donut-label {
+    font-size: 0.28em;
+    font-weight: 700;
+    line-height: 1;
+    fill: #000;
+    transform: translateY(0.25em);
+}
+
+.donut-percent {
+    font-size: 0.5em;
+    line-height: 1;
+    transform: translateY(0.5em);
+    font-weight: bold;
+}
+
+.donut-data {
+    font-size: 0.12em;
+    line-height: 1;
+    transform: translateY(0.5em);
+    text-align: center;
+    text-anchor: middle;
+    color:#49576d;
+    fill: #49576d;
+    animation: donutfadelong 1s;
+}
+
+.svg-item {
+  /* max-width:20%; */
+  display:inline-block;
+}
+.donut {
+  box-shadow: 5px 5px 15px rgb(0 0 0 / 20%), -5px -5px 15px rgb(255 255 255 / 5%), inset -5px -5px 10px rgb(255 255 255 / 5%), inset 5px 5px 10px rgb(0 0 0 / 20%);
+  border-radius:50%;
+}

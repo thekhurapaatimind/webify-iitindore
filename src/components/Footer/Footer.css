@@ -1,0 +1,6 @@
+i:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    transform: scale(1.1);
+}

@@ -72,7 +72,7 @@ function SwiperComponent() {
                     {/* {JsonData.map((d) => ( */}
                     {movies.map((movie) => {
                         return (
-                            <SwiperSlide className="d-flex justify-content-center align-items-center">
+                            <SwiperSlide key={movie.id} className="d-flex justify-content-center align-items-center">
                                 <Slides {...movie} />
                             </SwiperSlide>
                         )

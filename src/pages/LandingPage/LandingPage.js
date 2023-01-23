@@ -3,6 +3,7 @@ import './LandingPage.css'
 import Hero from '../../components/Hero/Hero'
 import SwiperComponent from '../../components/SwiperComponent/SwiperComponent'
 import Genre from '../../components/Genres/Genre'
+import Footer from '../../components/Footer/Footer'
 
 function LandingPage() {
   return (
@@ -10,6 +11,7 @@ function LandingPage() {
       <Hero/>
       <SwiperComponent/>
       <Genre/>
+      <Footer/>
     </>
   )
 }

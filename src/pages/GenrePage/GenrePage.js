@@ -3,11 +3,16 @@ import { useParams, Link } from 'react-router-dom'
 import { Card, Row, Col, Button } from 'react-bootstrap'
 import './GenrePage.css'
 import data from '../../data/data.json';
+import { useEffect } from 'react';
 
 function GenrePage() {
     const params = useParams();
     const genreId = params.genreId;
-
+    useEffect(() => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }, [genreId])
+    
     const getHeader = (genre) => {
         switch (genre) {
             case 'animation':
@@ -23,6 +28,7 @@ function GenrePage() {
             default:
                 return 'Animation';
         }
+        
     }
 
     const getBackground = (genre) => {
